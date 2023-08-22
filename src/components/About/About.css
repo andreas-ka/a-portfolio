@@ -1,0 +1,63 @@
+.particle {
+}
+
+.about {
+  flex-direction: column;
+  padding: 5em;
+  position: relative;
+  background-color: transparent;
+}
+
+.about__content {
+  position: relative; /* Ensure content is positioned on top of the particle background */
+  z-index: 1; /* Make sure content is above the particle background */
+  /* Other styling properties for the content */
+}
+
+.about__name {
+  color: var(--clr-primary);
+}
+
+.about__role {
+  margin-top: 1.2em;
+}
+
+.about__desc {
+  font-size: 1rem;
+  max-width: 600px;
+}
+
+.about__desc,
+.about__contact {
+  margin-top: 2.4em;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+
+.btn btn--outline {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+
+  .about.center {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .about__content {
+    width: 200%;
+    margin: 0 auto;
+    right: 45%;
+  }
+}
